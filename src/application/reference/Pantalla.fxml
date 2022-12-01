@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.reference.PantallaController">
+   <children>
+      <BorderPane layoutX="277.0" layoutY="132.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Label text="Basic CRUD" BorderPane.alignment="CENTER" />
+         </top>
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="583.0" prefWidth="279.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lblAction" text="Agregando">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <GridPane hgap="5.0" prefHeight="566.0" prefWidth="278.0" vgap="5.0" VBox.vgrow="ALWAYS">
+                     <Label text="N°" GridPane.rowIndex="0">
+                        <font>
+                           <Font name="System Bold" size="12.0" />
+                        </font>
+                     </Label>
+                     <TextField fx:id="txtId" prefHeight="25.0" prefWidth="218.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                     <Label text="Nombre" GridPane.rowIndex="1">
+                        <font>
+                           <Font name="System Bold" size="12.0" />
+                        </font>
+                     </Label>
+                        <TextField fx:id="txtNombre" prefHeight="25.0" prefWidth="218.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="Apellido" GridPane.rowIndex="2">
+                        <font>
+                           <Font name="System Bold" size="12.0" />
+                        </font>
+                     </Label>
+                        <TextField fx:id="txtApellido" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="Adeudo" GridPane.rowIndex="3">
+                        <font>
+                           <Font name="System Bold" size="12.0" />
+                        </font>
+                     </Label>
+                        <TextField fx:id="txtDeuda" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label text="Telefono" GridPane.rowIndex="4">
+                        <font>
+                           <Font name="System Bold" size="12.0" />
+                        </font>
+                     </Label>
+                        <TextField fx:id="txtTelefono" prefHeight="25.0" prefWidth="201.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Button fx:id="btnEliminar" mnemonicParsing="false" text="Eliminar" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+                     <Button fx:id="btnMutar" mnemonicParsing="false" text="Agregar" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                     <Button fx:id="btnCancelar" mnemonicParsing="false" text="Cancelar" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                     <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                     </rowConstraints>
+      
+              
+                        </GridPane>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <TableView fx:id="tblContent" prefHeight="583.0" prefWidth="553.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
